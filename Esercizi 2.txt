@@ -1,0 +1,11 @@
+let parolaA:string =prompt ("parolaA")
+let parolaB:string =prompt ("parolaB")
+console.log(parolaA+parolaB)
+console.log(parolaB+parolaA)
+
+// Scrivere un programma che:
+// prende in input una parola a  
+// prende in input una parola b
+// Output:
+// concatenazione di a con b
+// concatenazione di b con a
