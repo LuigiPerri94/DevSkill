@@ -1,0 +1,59 @@
+let input: number = prompt("inserisci valore");
+let valore: number= input;
+if (valore>0) {console.log ("il numero è positivo)")
+}else {console.log ("il numero è negativo")}
+
+
+///
+
+let input:number= prompt("inserisci valore");
+let valore: number= input;
+if (valore%2==0) {console.log ("il numero è pari")} else {console.log ("il numero è dispari")}
+
+///
+
+var numero1;
+var numero2;
+var numero3;
+numero1=prompt ("Inserisci numero 1") *1;
+numero2=prompt ("inserisci numero 2") *1;
+numero3=prompt ("Inserisci numero 3") *1; 
+if (numero1>=numero2) 
+{
+    if (numero1>=numero3);
+   alert ("il maggiore è" +numero1)
+}
+else 
+{ alert("il maggiore è" +numero3)
+}
+else 
+{
+    if (numero2>=numero3)
+    alert ("il maggiore è"+numero2)
+
+}
+else {
+    alert ("il maggiore è"+numero3)
+}
+}
+
+
+///
+
+let annoattuale= 2022
+let input: number= prompt ("Inserisci data di nascita");
+let annodinascita: number= +input;
+let sottrazione= (annoattuale-annodinascita);
+console.log("hai" sottrazione "anni");
+
+///
+
+
+let input: number=prompt("anno");
+let anno: number=+input
+if (anno%400==0) {
+console.log ("l'anno è bisestile");
+}
+else if (anno%4==0 && ! (anno%100) )
+{console.log ("L'anno è bisestile");}
+else {console.log ("l'anno non è bisestile");}
