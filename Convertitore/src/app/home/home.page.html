@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Convertitore non funzionante
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-grid-padding">
+    <ion-row class="ion-justify-content-center">
+      <h2>Convertitore</h2>
+    </ion-row>
+<ion-row>
+  <ion-col size="3">
+    <ion-item >
+      <ion-label position="floating">Kilometri</ion-label>
+      <ion-input type="number" [(ngModel)]="km" (keyup)="convertitore('km')"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col size="3">
+    <ion-item>
+      <ion-label position="floating">Miglia</ion-label>
+      <ion-input type="number" [(ngModel)]="mi" (keyup)="convertitore('mi')"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col size="3">
+    <ion-item>
+      <ion-label position="floating">Fahreneit</ion-label>
+      <ion-input type="number" [(ngModel)]="f" (keyup)="convertitore('f')"> </ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col size="3">
+    <ion-item>
+      <ion-label position="floating">Celsius</ion-label>
+      <ion-input type="number" [(ngModel)]="c" (keyup)="convertitore('c')"></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+
+
+
+  </ion-grid>
+  
+ 
+</ion-content>
