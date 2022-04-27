@@ -1,0 +1,49 @@
+let input: number = prompt("inserisci un numero");
+let max = 0;
+while (input != -1) {
+  if (input > max) {
+    max = input;
+  }
+  input = prompt("inserisci un nuovo numero (-1 per concludere)");
+}
+console.log("il numero maggiore è " + max);
+
+
+//Scrivere un programma che calcoli il massimo in un vettore di dimensione 10 ( valori scelti a piacimento)
+//E.S 
+// let A:number = [1,5,20,15,500,230];
+// Output : 500
+
+let a:number [] = [1, 5, 20,15,500,230];
+
+let max: number = a[0];
+for (let i = 0 ; i<a.length; i++) {
+    if (a[i] > max) {
+        max = a[i];
+    } 
+} console.log (max);
+
+
+
+//Scrivere un programma che calcoli il massimo in un vettore di dimensione 10 (valori presi da input)
+//E.S 
+// Input A = [ 1 9 200 9 1 9 0 50]
+// Output : 200
+
+let a:number [] = [];
+let v : number = prompt ("numeri")*1;
+let max: number = v ;
+
+for (let i=0 ; i<10; i++) {
+    
+    if (v > max) {
+        max = v;
+        
+    } 
+    v = prompt ("numeri")*1;
+    
+    
+
+    }
+a.push(v);
+    console.log(max);
