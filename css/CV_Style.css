@@ -1,0 +1,58 @@
+body{
+    background-image:url("../immagini/sfondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    font-family:"HARRY";
+    color:white
+}
+.titolo {
+    border: 15px solid white;
+    display: inline-block;
+
+}
+
+.paragrafo {
+    border: 13px solid white;
+    display: flex;
+    width: 30%;
+    text-align: justify;
+    
+    
+}
+.paragrafo p {
+    padding: 1rem;
+}
+.paragrafo h1 {
+   text-align: center;
+
+}
+.paragrafosinistra {
+     border: 1px solid white;
+     width: 50%;
+}
+.paragrafodestra {
+    float:right;
+    width: 50%;
+}
+.commento {
+    text-align:justify ;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  * html .clearfix             { zoom: 1; } /* IE6 */
+  *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+    @font-face {
+    font-family: "HARRY";
+    src: url("../Fonts/HARRY.TTF") format("woff2"); 
+    }
+
+    
+    
+    
+

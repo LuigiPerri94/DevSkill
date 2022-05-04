@@ -7,27 +7,35 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  c:number;
-  f:number;
-  km:number;
-  mi:number;
+  c: number;
+  f: number;
+  km: number;
+  mi: number;
 
-  convertitore(unita:string):void{
-    if (unita === "c") {
-      this.f=this.arrotonda (((9/5) * this.c) +32) ;
-    } else if (unita === "f") {
-      this.c= this.arrotonda ((this.f-32) * (5/9));
-    } else if (unita === "km") {
-      this.mi=this.arrotonda (this.km *1.609);
-    } else (unita === "mi"); {
-      this.km=this.arrotonda (this.mi /1.609);
+
+  conversione(messaggio:string) {
+    let valore = 0;
+    let misura: string;
+    const messaggioFinale = messaggio.split(":");
+
+    misura = messaggioFinale[0];
+    valore = +messaggioFinale[1];
+
+    if (misura === "KM") {
+      this.mi = valore;
+    }    
+    if (misura === "MI") {
+      this.km = valore;
+    }    
+    if (misura === "C") {
+      this.f = valore;
+    }    
+    if (misura === "F") {
+      this.c = valore;
     }
-  
   }
-  constructor() {}
+  constructor() { }
 
-  arrotonda(risultato:number):number {
-    return +risultato.toPrecision(3);
-  }
+
 
 }
