@@ -1,0 +1,34 @@
+function calcolo(numeroIntero: number, array: number): boolean {
+    if (array % numeroIntero == 0) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+let array: number[] = [];
+let a: number;
+let numeroIntero: number = +prompt("Inserisci Numero Intero");
+let variabile: boolean = true;
+for (let i = 0; i < 10; i++) {
+
+    a = +prompt("inserisci 10 valori");
+
+    array.push(a);
+
+}
+for (let i = 0; i < array.length; i++) {
+    let risultato = calcolo(numeroIntero, array[i]);
+    if (risultato == true) {
+        console.log("No");
+        break;
+    }
+    else {
+        variabile = risultato;
+    }
+
+
+}
+if (variabile == false) {
+    console.log("ok");
+}
